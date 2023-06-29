@@ -19,20 +19,22 @@ function MovieList({ movies }: MovieListProps) {
   return (
     <div className="movie-list">
       {movies.map((movie) => (
-        <div key={movie.id} className="movie-item">
-          <div className="poster-container">
-            {movie.poster_path ? (
-              <img
-                src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}
-                alt={movie.title}
-              />
-            ) : (
-              <img src={defaultPosterURL} alt="Default Poster" />
-            )}
+        <a key={movie.id} href={`/${movie.id}`}>
+          <div className="movie-item">
+            <div className="poster-container">
+              {movie.poster_path ? (
+                <img
+                  src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}
+                  alt={movie.title}
+                />
+              ) : (
+                <img src={defaultPosterURL} alt="No Poster" />
+              )}
+            </div>
+            <p>{movie.title}</p>
+            <p>{movie.release_date}</p>
           </div>
-          <h2>{movie.title}</h2>
-          <p>{movie.release_date.substring(0, 4)}</p>
-        </div>
+        </a>
       ))}
     </div>
   );

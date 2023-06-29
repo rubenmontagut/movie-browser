@@ -1,0 +1,45 @@
+.movie-details {
+  text-align: center;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.title {
+  margin-top: 2rem;
+  font-size: 4em;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  font-size: 1.5em;
+}
+
+.poster-container {
+  flex: 0.3;
+  margin-right: 2rem;
+  position: relative;
+}
+
+.poster-container img {
+  max-height: 300px;
+  border-radius: 4px;
+  height: 300px;
+  width: 200px;
+}
+
+.adult-image {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 50px;
+}
+
+.details {
+  flex: 1;
+  text-align: left;
+}
