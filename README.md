@@ -1,6 +1,6 @@
 # Frontend en Typescript usando React
 
-Se trata de hacer un _frontend_ usando React con Typescript. 
+Se trata de hacer un _frontend_ usando React con Typescript.
 
 La API para este backend es una cualquiera, en el campus encontraréis un PDF con ejemplos de APIs curiosas, pero no es necesario usar una de esas, hay muchas más. Se trata de usar los datos de la API escogida (típicamente suelen ser APIs de solo lectura, o se puede escribir poco) y mostrarlos de una forma atractiva y hasta cierto punto interactiva.
 
@@ -13,10 +13,16 @@ Si la API requiere tener un `API_KEY` o precido deberéis registraros y obtenerl
 ## Entregable
 
 Como anteriormente, para hacer esta práctica hay que:
+
 - Hacer un _fork_ de este repositorio.
 - Trabajar en el _fork_ haciendo commits regularmente (una práctica que aparece entera en un solo commit tendrá una nota muy baja o cero, hay que mostrar todo el proceso intermedio).
 - Al finalizar, se debe crear un `ZIP` del repositorio (que incluya el fichero `.env`!) y entregarlo en el [Campus Online de UPC School](https://talent.upc.edu) (habrá una tarea preparada para ello).
 
 El entregable es el código del proyecto, incluyendo:
+
 - El código completo del frontend.
 - Si se necesia un `API_KEY`, habrá que ponerla en el fichero `.env`.
+
+# Ejercicio final
+
+La API finalmente usada es una de búsqueda y detalles de películas, en concreto [TMDB](https://www.themoviedb.org/). La aplicación constará de una página inicial con un buscador por texto para películas y una página para cada película hecha con una plantilla igual para todas.
